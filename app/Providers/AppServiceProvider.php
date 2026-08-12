@@ -25,6 +25,10 @@ class AppServiceProvider extends ServiceProvider
     {
         if ($this->app->environment('production')) {
             URL::forceScheme('https');
+            // Pin generated URLs (canonical tags, sitemap, route()) to the
+            // configured APP_URL host, so requests arriving via www. or any
+            // other host alias still produce the one canonical non-www URL.
+            URL::forceRootUrl(config('app.url'));
         }
 
         View::composer(

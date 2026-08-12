@@ -40,7 +40,7 @@
         </div>
 
         <div>
-            <h2 class="text-xl font-bold text-slate-900">Cookies</h2>
+            <h2 class="text-xl font-bold text-slate-900">Essential Cookies</h2>
             <p class="mt-2">
                 Tokkucal uses a session cookie to keep the site secure (for example, to prevent cross-site request forgery).
                 This cookie does not identify you personally and expires automatically.
@@ -48,15 +48,27 @@
         </div>
 
         <div>
-            <h2 class="text-xl font-bold text-slate-900">Analytics and advertising</h2>
+            <h2 class="text-xl font-bold text-slate-900">Analytics</h2>
             <p class="mt-2">
-                We may use Google Analytics to understand overall traffic and which tools are popular, and Google AdSense
-                to show ads that keep Tokkucal free. Both may use cookies or similar technologies to collect information
-                such as your approximate location, device type and browsing behaviour across websites. Google's use of
-                this data is governed by
+                We may use Google Analytics to understand overall traffic and which tools are popular. If enabled, it uses
+                cookies to collect anonymised usage information such as pages visited, approximate location and device
+                type. This data is not linked to your name or contact details.
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-xl font-bold text-slate-900">Advertising and Cookies</h2>
+            <p class="mt-2">
+                We have applied to use Google AdSense on Tokkucal. Once approved or activated, Google and other
+                third-party advertising vendors may use cookies or similar technologies to serve ads and measure how
+                they perform. These cookies can be used to personalise ads based on your visits to this and other
+                websites, unless you have opted out or your region requires a consent choice first. For visitors in the
+                European Economic Area, the United Kingdom and Switzerland, a consent message is shown before any
+                personalised advertising cookies are set, managed through Google's certified consent management
+                platform. You can review or change your ad personalisation settings at any time in
+                <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>,
+                and learn more about how Google uses data from partner sites in
                 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's Privacy &amp; Terms</a>.
-                You can control ad personalisation through
-                <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>.
             </p>
         </div>
 
@@ -66,6 +78,36 @@
                 Like most websites, our server automatically records basic technical information for security and
                 troubleshooting purposes — such as IP address, browser type and pages requested. These logs are used only
                 to keep the service reliable and secure, and are not used to build a profile of individual visitors.
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-xl font-bold text-slate-900">Data Retention</h2>
+            <p class="mt-2">
+                We keep information only for as long as necessary for the purpose it was collected. Calculator inputs and
+                uploaded images are never stored, as described above. Contact form messages are retained only as long as
+                needed to respond to your enquiry. Standard technical server logs are kept for a limited period for
+                security and troubleshooting purposes.
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-xl font-bold text-slate-900">Your Privacy Rights</h2>
+            <p class="mt-2">
+                Depending on where you live, you may have rights to access, correct or request deletion of personal data
+                we hold about you, and to object to certain processing. Since Tokkucal does not require an account and
+                does not store calculator data, there is typically very little personal data associated with your use of
+                the site beyond what you submit through the contact form. To exercise any of these rights or ask a
+                question about your data, use our <a href="{{ route('contact') }}">Contact page</a>.
+            </p>
+        </div>
+
+        <div>
+            <h2 class="text-xl font-bold text-slate-900">Security</h2>
+            <p class="mt-2">
+                We take reasonable technical measures to protect the site and any information submitted through it,
+                including an encrypted (HTTPS) connection and standard security practices. However, no method of
+                transmission over the internet is completely secure, and we cannot guarantee absolute security.
             </p>
         </div>
 

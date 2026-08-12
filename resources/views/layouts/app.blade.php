@@ -7,6 +7,7 @@
 
     <title>{{ $title ?? config('tokkucal.site_name').' – '.config('tokkucal.tagline') }}</title>
     <meta name="description" content="{{ $description ?? config('tokkucal.description') }}">
+    <meta name="robots" content="{{ $robots ?? 'index, follow' }}">
     <link rel="canonical" href="{{ $canonical ?? url()->current() }}">
 
     @if (config('services.search_console.verification'))

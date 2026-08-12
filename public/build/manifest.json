@@ -1,0 +1,118 @@
+{
+  "_format-DV24c1nU.js": {
+    "file": "assets/format-DV24c1nU.js",
+    "name": "format"
+  },
+  "_http-G4T0k7b1.js": {
+    "file": "assets/http-G4T0k7b1.js",
+    "name": "http"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-Ci8Hf1fC.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-PV5jU9pC.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/tools/age-calculator.js": {
+    "file": "assets/age-calculator-YHEpwRLc.js",
+    "name": "age-calculator",
+    "src": "resources/js/tools/age-calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js"
+    ]
+  },
+  "resources/js/tools/attendance-calculator.js": {
+    "file": "assets/attendance-calculator-DUp4YNQR.js",
+    "name": "attendance-calculator",
+    "src": "resources/js/tools/attendance-calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js",
+      "_format-DV24c1nU.js"
+    ]
+  },
+  "resources/js/tools/discount-calculator.js": {
+    "file": "assets/discount-calculator-DNeKBO3j.js",
+    "name": "discount-calculator",
+    "src": "resources/js/tools/discount-calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js",
+      "_format-DV24c1nU.js"
+    ]
+  },
+  "resources/js/tools/emi-calculator.js": {
+    "file": "assets/emi-calculator-B29SxXGE.js",
+    "name": "emi-calculator",
+    "src": "resources/js/tools/emi-calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js",
+      "_format-DV24c1nU.js"
+    ]
+  },
+  "resources/js/tools/gst-calculator.js": {
+    "file": "assets/gst-calculator-BfzBNFwB.js",
+    "name": "gst-calculator",
+    "src": "resources/js/tools/gst-calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js",
+      "_format-DV24c1nU.js"
+    ]
+  },
+  "resources/js/tools/image-compressor.js": {
+    "file": "assets/image-compressor-CuJTP32x.js",
+    "name": "image-compressor",
+    "src": "resources/js/tools/image-compressor.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js"
+    ]
+  },
+  "resources/js/tools/image-resizer.js": {
+    "file": "assets/image-resizer-ql4xnnOU.js",
+    "name": "image-resizer",
+    "src": "resources/js/tools/image-resizer.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js"
+    ]
+  },
+  "resources/js/tools/percentage-calculator.js": {
+    "file": "assets/percentage-calculator-Cf6kVDaE.js",
+    "name": "percentage-calculator",
+    "src": "resources/js/tools/percentage-calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js",
+      "_format-DV24c1nU.js"
+    ]
+  },
+  "resources/js/tools/qr-generator.js": {
+    "file": "assets/qr-generator-Oml4tBw7.js",
+    "name": "qr-generator",
+    "src": "resources/js/tools/qr-generator.js",
+    "isEntry": true
+  },
+  "resources/js/tools/salary-calculator.js": {
+    "file": "assets/salary-calculator-XlncDs5q.js",
+    "name": "salary-calculator",
+    "src": "resources/js/tools/salary-calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_http-G4T0k7b1.js",
+      "_format-DV24c1nU.js"
+    ]
+  }
+}

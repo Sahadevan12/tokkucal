@@ -1,0 +1,1 @@
+const t=new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:2}),m=new Intl.NumberFormat("en-IN",{maximumFractionDigits:2});function n(r){return t.format(Number(r)||0)}function e(r){return m.format(Number(r)||0)}export{n as a,e as f};

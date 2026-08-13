@@ -8,7 +8,7 @@
     <p class="mt-3 max-w-2xl text-slate-600">{{ $tool->description }}</p>
 
     <div class="mt-8 grid gap-8 lg:grid-cols-3 lg:items-start">
-        <div class="space-y-6 lg:col-span-2">
+        <div class="space-y-6 lg:col-span-2 min-w-0">
             <form id="percentage-form" data-action="{{ route('percentage-calculator.calculate') }}" class="card p-6 sm:p-8" novalidate>
                 <div class="grid grid-cols-1 gap-1 rounded-xl bg-slate-100 p-1 sm:grid-cols-3" role="tablist" aria-label="Percentage calculation mode">
                     <button type="button" data-percentage-mode="of" class="percentage-mode-btn rounded-lg px-3 py-2.5 text-sm font-semibold transition" aria-pressed="true">X% of Y</button>

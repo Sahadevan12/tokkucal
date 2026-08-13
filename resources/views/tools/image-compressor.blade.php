@@ -8,7 +8,7 @@
     <p class="mt-3 max-w-2xl text-slate-600">{{ $tool->description }}</p>
 
     <div class="mt-8 grid gap-8 lg:grid-cols-3 lg:items-start">
-        <div class="space-y-6 lg:col-span-2">
+        <div class="space-y-6 lg:col-span-2 min-w-0">
             <div class="card p-6 sm:p-8">
                 <div
                     id="compressor-dropzone"

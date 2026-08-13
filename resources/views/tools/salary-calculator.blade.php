@@ -12,7 +12,7 @@
     </div>
 
     <div class="mt-8 grid gap-8 lg:grid-cols-3 lg:items-start">
-        <div class="space-y-6 lg:col-span-2">
+        <div class="space-y-6 lg:col-span-2 min-w-0">
             <form id="salary-form" data-action="{{ route('salary-calculator.calculate') }}" class="card p-6 sm:p-8" novalidate>
                 <p class="text-sm font-semibold text-slate-900">Enter annual amounts (₹ per year)</p>
                 <div class="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2">

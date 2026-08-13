@@ -8,7 +8,7 @@
     <p class="mt-3 max-w-2xl text-slate-600">{{ $tool->description }}</p>
 
     <div class="mt-8 grid gap-8 lg:grid-cols-3 lg:items-start">
-        <div class="space-y-6 lg:col-span-2">
+        <div class="space-y-6 lg:col-span-2 min-w-0">
             <form id="attendance-form" data-action="{{ route('attendance-calculator.calculate') }}" class="card p-6 sm:p-8" novalidate>
                 <div class="grid grid-cols-1 gap-5 sm:grid-cols-3">
                     <x-calculator-input name="total_classes" label="Total Classes Held" type="number" min="1" step="1" placeholder="e.g. 90" required />
@@ -66,6 +66,15 @@
                 <x-slot:example>
                     <p>If you've attended 70 of 90 classes (77.8%) with a 75% target, you're above target and can still miss a few upcoming classes. If you've attended 60 of 90 (66.7%), you're below target and need to attend a run of future classes without missing any to climb back to 75%.</p>
                 </x-slot:example>
+
+                <x-slot:explanation>
+                    <p>
+                        It's tempting to guess "classes you can miss" by simple subtraction, but every future class held changes both the
+                        number attended and the total, so the real answer depends on solving for the target percentage directly rather
+                        than estimating. That's why this calculator works out the exact number of classes you can miss — or must attend
+                        without fail — instead of a rough approximation.
+                    </p>
+                </x-slot:explanation>
             </x-seo-content>
 
             <x-faq :items="[

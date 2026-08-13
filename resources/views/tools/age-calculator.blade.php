@@ -8,7 +8,7 @@
     <p class="mt-3 max-w-2xl text-slate-600">{{ $tool->description }}</p>
 
     <div class="mt-8 grid gap-8 lg:grid-cols-3 lg:items-start">
-        <div class="space-y-6 lg:col-span-2">
+        <div class="space-y-6 lg:col-span-2 min-w-0">
             <form id="age-form" data-action="{{ route('age-calculator.calculate') }}" class="card p-6 sm:p-8" novalidate>
                 <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
                     <x-calculator-input name="date_of_birth" type="date" label="Date of Birth" required />

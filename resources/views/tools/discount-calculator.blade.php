@@ -8,7 +8,7 @@
     <p class="mt-3 max-w-2xl text-slate-600">{{ $tool->description }}</p>
 
     <div class="mt-8 grid gap-8 lg:grid-cols-3 lg:items-start">
-        <div class="space-y-6 lg:col-span-2">
+        <div class="space-y-6 lg:col-span-2 min-w-0">
             <form id="discount-form" data-action="{{ route('discount-calculator.calculate') }}" class="card p-6 sm:p-8" novalidate>
                 <div class="flex rounded-xl bg-slate-100 p-1" role="tablist" aria-label="Discount calculation mode">
                     <button type="button" data-discount-mode="percent" class="discount-mode-btn flex-1 rounded-lg px-4 py-2.5 text-sm font-semibold transition" aria-pressed="true">
@@ -74,6 +74,15 @@
                 <x-slot:example>
                     <p>A ₹2,000 item with a 25% discount: Discount = 2000 × 25 ÷ 100 = ₹500. Final Price = 2000 − 500 = ₹1,500.</p>
                 </x-slot:example>
+
+                <x-slot:explanation>
+                    <p>
+                        Discounts are usually advertised as a percentage off, but the rupee amount you actually save depends on the
+                        original price — 20% off a ₹5,000 item saves far more than 20% off a ₹500 item. This calculator also works in
+                        reverse: if a shop only shows the original and sale price, switching to the "I know the sale price" tab tells
+                        you exactly what discount percentage was applied, which is handy for comparing deals across different stores.
+                    </p>
+                </x-slot:explanation>
             </x-seo-content>
 
             <x-faq :items="[

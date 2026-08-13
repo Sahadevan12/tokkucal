@@ -88,4 +88,36 @@ class PageRoutesTest extends TestCase
     {
         $this->get('/this-route-does-not-exist')->assertNotFound();
     }
+
+    #[DataProvider('toolRoutes')]
+    public function test_each_tool_page_has_valid_structured_data(string $routeName): void
+    {
+        $this->assertStructuredDataIsValid(route($routeName));
+    }
+
+    public function test_homepage_has_valid_structured_data(): void
+    {
+        $this->assertStructuredDataIsValid(route('home'));
+    }
+
+    public function test_about_page_has_valid_structured_data(): void
+    {
+        $this->assertStructuredDataIsValid(route('about'));
+    }
+
+    private function assertStructuredDataIsValid(string $url): void
+    {
+        $html = $this->get($url)->getContent();
+
+        preg_match_all('#<script type="application/ld\+json">(.*?)</script>#s', $html, $matches);
+
+        $this->assertNotEmpty($matches[1], "No JSON-LD blocks found on {$url}");
+
+        foreach ($matches[1] as $block) {
+            $decoded = json_decode(trim($block), associative: true);
+
+            $this->assertNotNull($decoded, "JSON-LD block on {$url} is not valid JSON: {$block}");
+            $this->assertSame('https://schema.org', $decoded['@context'] ?? null, "JSON-LD block on {$url} is missing a correct @context key — check for Blade's @context directive colliding with a literal '@context' string.");
+        }
+    }
 }

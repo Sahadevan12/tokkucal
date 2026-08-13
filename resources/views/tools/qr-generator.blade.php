@@ -8,7 +8,7 @@
     <p class="mt-3 max-w-2xl text-slate-600">{{ $tool->description }}</p>
 
     <div class="mt-8 grid gap-8 lg:grid-cols-3 lg:items-start">
-        <div class="space-y-6 lg:col-span-2">
+        <div class="space-y-6 lg:col-span-2 min-w-0">
             <div class="card p-6 sm:p-8">
                 <div class="grid grid-cols-2 gap-1 rounded-xl bg-slate-100 p-1 sm:grid-cols-5" role="tablist" aria-label="QR code content type">
                     <button type="button" data-qr-type="url" class="qr-type-btn rounded-lg px-3 py-2.5 text-sm font-semibold transition" aria-pressed="true">URL</button>

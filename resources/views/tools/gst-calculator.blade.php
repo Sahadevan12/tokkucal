@@ -8,7 +8,7 @@
     <p class="mt-3 max-w-2xl text-slate-600">{{ $tool->description }}</p>
 
     <div class="mt-8 grid gap-8 lg:grid-cols-3 lg:items-start">
-        <div class="space-y-6 lg:col-span-2">
+        <div class="space-y-6 lg:col-span-2 min-w-0">
             <form id="gst-form" data-action="{{ route('gst-calculator.calculate') }}" class="card p-6 sm:p-8" novalidate>
                 <div class="flex rounded-xl bg-slate-100 p-1" role="tablist" aria-label="GST calculation mode">
                     <button type="button" data-gst-mode="exclusive" class="gst-mode-btn flex-1 rounded-lg px-4 py-2.5 text-sm font-semibold transition" aria-pressed="true">

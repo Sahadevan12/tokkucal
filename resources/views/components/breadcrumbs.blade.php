@@ -21,7 +21,7 @@
 @push('schema')
     <script type="application/ld+json">
         {!! json_encode([
-            '@context' => 'https://schema.org',
+            '@@context' => 'https://schema.org',
             '@type' => 'BreadcrumbList',
             'itemListElement' => collect($items)->values()->map(fn ($item, $index) => array_filter([
                 '@type' => 'ListItem',

@@ -28,11 +28,13 @@
     <meta name="twitter:description" content="{{ $description ?? config('tokkucal.description') }}">
     <meta name="twitter:image" content="{{ $ogImage ?? asset(config('tokkucal.default_og_image')) }}">
 
-    {{-- Favicon --}}
+    {{-- Favicon — Google's search-result favicon guidance recommends 48x48+, so that size is included alongside the smaller ones browsers use for tabs. --}}
     <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
     <link rel="alternate icon" href="{{ asset('favicon.ico') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('favicon-48x48.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicon-96x96.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
 
     @isset($jsonLd)
